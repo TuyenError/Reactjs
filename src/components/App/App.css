@@ -1,9 +1,5 @@
 .App {
   text-align: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr ;
-  grid-gap: 3%;
-
 }
 
 .App-logo {
@@ -28,7 +24,6 @@
   color: white;
 }
 
-
 .App-link {
   color: #61dafb;
 }
@@ -37,10 +32,8 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
-}
-.Sanpham img{
-  max-width: 50%;
 }
