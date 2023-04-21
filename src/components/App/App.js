@@ -1,24 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
-import Slider from '../Content/Slider/Slider';
-import LeftSidebar from '../Content/LeftSidebar/LeftSidebar';
-import RightContext from '../Content/RightContent/RightContent';
+import OnChange from '../OnChange/OnChange';
 function App() {
   return (
     <body>
-      <Header></Header>
-      <Slider></Slider>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-3">
-            <LeftSidebar></LeftSidebar>
-          </div>
-          <RightContext></RightContext>
-        </div>
+      <div>
+        <OnChange></OnChange>
       </div>
-      <Footer></Footer>
     </body>
   );
 }
