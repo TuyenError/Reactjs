@@ -1,14 +1,18 @@
-import logo from './logo.svg';
+// import Sanpham from '../Sanpham/Sanpham';
 import './App.css';
-import OnChange from '../OnChange/OnChange';
-function App() {
+import React,{Component} from 'react';
+import Header from '../Header/Header';
+import Fooder from '../Footer/Footer';
+import Content from '../Body/content';
+
+function shop() {
   return (
-    <body>
-      <div>
-        <OnChange></OnChange>
-      </div>
-    </body>
+    <div>
+        
+        <Header></Header>
+        <Content></Content>
+        <Fooder></Fooder>
+    </div>
   );
 }
-
-export default App;
+export default shop;
