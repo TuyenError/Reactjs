@@ -14,16 +14,16 @@ class From extends Component {
         this.handleSubmit = this.handleSubmit.bind(this);
 
     }
-    handleChange = (event) => {
+    handleChange = async (event) => {
+        event.preventDefault();
         let key = event.target.name;
         let val = event.target.value;
-
         this.setState({ [key]: val });
         this.setState((state) => ({
             avg: parseFloat((parseFloat(state.hk1) + parseFloat(state.hk2)) / 2),
         }));
-        this.setResult();
-        this.setXL();
+        // this.setResult();
+        // this.setXL();
 
     };
 
@@ -34,7 +34,7 @@ class From extends Component {
     };
     setResult = () => {
         if (this.state.avg > 4, 5) this.setState({ result: "Được lên lớp" });
-        else this.setState({ result: "Ở lại lớp" });
+        else this.setState({ result: "Ở lại lp" });
     };
     setXL = () => {
         if (this.state.avg<4.5) this.setState({xl:"Yếu"});
